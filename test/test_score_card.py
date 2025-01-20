@@ -13,16 +13,16 @@ def test_symbol_zero():
     PINS = "9-9-9-9-9-9-9-9-9-9-"
     total = 90
     pins = ScoreCard(PINS)
-    assert pins.get_zero() == total
+    assert pins.get_score() == total
 
     PINS = "9-3561368153258-7181"
     total = 82
     pins = ScoreCard(PINS)
-    assert pins.get_zero() == total
+    assert pins.get_score() == total
 
 
-#def test_spare_not_extra():
- #   pins = "9-3/613/815/-/8-7/8-"
-  #  total = 121
-   # score_card = ScoreCard(pins)
-    #assert score_card.spare_not_extra() == total
+def test_spare_not_extra():
+    PINS = "4/444444444444444444"
+    total = 86
+    pins = ScoreCard(PINS)
+    assert pins.spare_not_extra() == total

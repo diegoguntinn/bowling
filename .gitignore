@@ -1,0 +1,21 @@
+# VSCode
+.vscode
+.cache
+
+# Python
+venv/
+.venv/
+__pycache__
+
+# Pytest
+.pytest_cache
+
+# Tox
+.tox/
+
+# Wheel
+build/
+
+# Coverage
+.coverage
+coverage_annotation/
